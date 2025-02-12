@@ -12,7 +12,7 @@
         <div th:each="el : ${articles}" class="alert alert-info mt-2">
             <h3 th:text="${el._Title}"/>
             <p th:text="${el._Anons}"/>
-            <a th:href="'/blog/' + ${el._Id}">Детальнее</a>
+            <a th:href="'/blog/' + ${el._Id}" class="btn btn-warning">Детальнее</a>
         </div>
     </div>
     <div th:insert="~{blocks/footer :: footer}"/>
